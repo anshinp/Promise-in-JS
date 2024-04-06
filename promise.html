@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+        // const p1 = {
+        //     fname: "Shil",
+        //     lname: "Hid",
+        //     sname: "G"
+        // };
+
+
+        // const p2= {
+        //     fname: "Dumsy",
+        //     lname: "Clumsy"
+        // }
+
+
+
+        // new Promise(function (resolve, reject) {
+
+        //     setTimeout(() => resolve(p1.fname), 1000);
+
+
+        // }).then(function (result) {
+
+        //     alert(result);
+        //     return result + " " + p1.lname;
+
+
+
+        // }).then(function (result) {
+
+        //     alert(result);
+        //     return result + " " + p1.sname;
+
+        // }).then(function (result) {
+
+        //     alert(result);
+        //     return result;
+
+        // });
+
+
+
+
+
+        // let promise = new Promise(function (resolve, reject) {
+        //     setTimeout(() => {
+        //         reject("REJECT");
+        //     }, 2000);
+
+        //     setTimeout(() => {
+        //         resolve("RESOLVE");
+        //     }, 2000);
+        // });
+
+        // promise.then(
+        //     function (result) {
+        //         alert("Success: " + result); // This will alert "Success: RESOLVE"
+        //     },
+        //     function (error) {
+        //         alert("Error: " + error); // This will alert "Error: REJECT"
+        //     }
+        // );
+
+
+
+
+
+        // ================================================================
+
+
+
+
+
+
+
+        function fnctn() {
+            console.log("HEllo!");
+
+            let promise = new Promise(function (resolve, reject){
+                setTimeout(()=>resolve("Done!,Shown after 1.5sec"),1500)
+            });
+            promise.then(
+                result => alert(result),
+                error => alert(error)
+            )
+        };
+
+        fnctn();
+
+
+
+
+
+
+        // ================================================================
+
+
+    </script>
+</body>
+
+</html>
